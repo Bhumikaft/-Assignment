@@ -1,0 +1,169 @@
+2024-03-21 08:27:05,743 DEBUG cd frappe-bench && python3.11 -m venv env
+2024-03-21 08:27:09,961 DEBUG cd frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-03-21 08:27:10,858 DEBUG cd frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-03-21 08:27:12,834 LOG Getting frappe
+2024-03-21 08:27:12,834 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-03-21 08:27:17,150 LOG Installing frappe
+2024-03-21 08:27:17,151 DEBUG cd /home/erp_user/frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/erp_user/frappe-bench/apps/frappe 
+2024-03-21 08:28:49,295 DEBUG cd /home/erp_user/frappe-bench/apps/frappe && yarn install --check-files
+2024-03-21 08:29:24,428 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-21 08:29:24,428 DEBUG cd frappe-bench && bench build
+2024-03-21 08:29:24,570 INFO /usr/local/bin/bench build
+2024-03-21 08:29:43,278 LOG setting up backups
+2024-03-21 08:29:43,310 LOG backups were set up
+2024-03-21 08:29:43,310 INFO Bench frappe-bench initialized
+2024-03-21 08:32:07,401 INFO /usr/local/bin/bench new-site test
+2024-03-21 08:33:32,301 INFO /usr/local/bin/bench new-site test
+2024-03-21 08:34:16,275 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2024-03-21 08:34:17,033 LOG Getting erpnext
+2024-03-21 08:34:17,033 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-03-21 08:34:22,685 LOG Installing erpnext
+2024-03-21 08:34:22,685 DEBUG cd /home/erp_user/frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/erp_user/frappe-bench/apps/erpnext 
+2024-03-21 08:34:42,948 DEBUG cd /home/erp_user/frappe-bench/apps/erpnext && yarn install --check-files
+2024-03-21 08:34:43,879 DEBUG bench build --app erpnext
+2024-03-21 08:34:43,981 INFO /usr/local/bin/bench build --app erpnext
+2024-03-21 08:34:47,073 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-21 08:35:57,953 INFO /usr/local/bin/bench --version
+2024-03-21 08:36:12,643 INFO /usr/local/bin/bench use site test
+2024-03-21 08:36:47,669 INFO /usr/local/bin/bench use test
+2024-03-21 08:37:02,608 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2024-03-21 08:37:08,703 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-03-21
+2024-03-21 08:37:08,710 LOG Getting erpnext
+2024-03-21 08:37:08,710 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-03-21 08:37:17,723 LOG Installing erpnext
+2024-03-21 08:37:17,723 DEBUG cd /home/erp_user/frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/erp_user/frappe-bench/apps/erpnext 
+2024-03-21 08:37:21,867 DEBUG cd /home/erp_user/frappe-bench/apps/erpnext && yarn install --check-files
+2024-03-21 08:37:22,357 DEBUG bench build --app erpnext
+2024-03-21 08:37:22,471 INFO /usr/local/bin/bench build --app erpnext
+2024-03-21 08:37:25,184 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-21 08:37:36,288 INFO /usr/local/bin/bench --site test install-app erpnext
+2024-03-21 08:37:59,937 INFO /usr/local/bin/bench start
+2024-03-21 08:38:00,589 INFO /usr/local/bin/bench watch
+2024-03-21 08:38:00,591 INFO /usr/local/bin/bench worker
+2024-03-21 08:38:00,596 INFO /usr/local/bin/bench serve --port 8000
+2024-03-21 08:38:00,623 INFO /usr/local/bin/bench schedule
+2024-03-21 09:53:29,491 INFO /usr/local/bin/bench start
+2024-03-21 09:57:30,701 INFO /usr/local/bin/bench start
+2024-03-21 10:01:33,559 INFO /usr/local/bin/bench start
+2024-03-21 10:01:34,590 INFO /usr/local/bin/bench worker
+2024-03-21 10:01:34,592 INFO /usr/local/bin/bench serve --port 8000
+2024-03-21 10:01:34,599 INFO /usr/local/bin/bench schedule
+2024-03-21 10:01:34,608 INFO /usr/local/bin/bench watch
+2024-03-21 10:07:43,961 INFO /usr/local/bin/bench start
+2024-03-21 10:07:44,291 INFO /usr/local/bin/bench serve --port 8000
+2024-03-21 10:07:44,304 INFO /usr/local/bin/bench schedule
+2024-03-21 10:07:44,311 INFO /usr/local/bin/bench watch
+2024-03-21 10:07:44,324 INFO /usr/local/bin/bench worker
+2024-03-21 10:10:52,371 INFO /usr/local/bin/bench start
+2024-03-21 10:10:52,738 INFO /usr/local/bin/bench serve --port 8000
+2024-03-21 10:10:52,738 INFO /usr/local/bin/bench worker
+2024-03-21 10:10:52,739 INFO /usr/local/bin/bench watch
+2024-03-21 10:10:52,739 INFO /usr/local/bin/bench schedule
+2024-03-21 10:11:05,812 INFO /usr/local/bin/bench build
+2024-03-21 10:12:03,375 INFO /usr/local/bin/bench reinstall
+2024-03-21 10:12:27,729 INFO /usr/local/bin/bench reinstall
+2024-03-21 10:13:43,997 INFO /usr/local/bin/bench migrate
+2024-03-21 10:33:55,041 INFO /usr/local/bin/bench new site demo
+2024-03-21 10:34:16,311 INFO /usr/local/bin/bench new-site demo
+2024-03-21 10:35:56,277 INFO /usr/local/bin/bench --version
+2024-03-21 10:37:08,602 INFO /usr/local/bin/bench start
+2024-03-21 10:37:16,674 INFO /usr/local/bin/bench --version
+2024-03-21 10:38:08,164 INFO /usr/local/bin/bench get-app erpnext --branch version-15
+2024-03-21 10:38:12,151 INFO App moved from apps/erpnext to archived/apps/erpnext-2024-03-21_1
+2024-03-21 10:38:12,158 LOG Getting erpnext
+2024-03-21 10:38:12,158 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-03-21 10:38:17,871 LOG Installing erpnext
+2024-03-21 10:38:17,872 DEBUG cd /home/erp_user/frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/erp_user/frappe-bench/apps/erpnext 
+2024-03-21 10:38:23,979 DEBUG cd /home/erp_user/frappe-bench/apps/erpnext && yarn install --check-files
+2024-03-21 10:38:24,711 DEBUG bench build --app erpnext
+2024-03-21 10:38:24,856 INFO /usr/local/bin/bench build --app erpnext
+2024-03-21 10:38:29,875 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-21 10:39:24,468 INFO /usr/local/bin/bench use site demo
+2024-03-21 10:39:43,884 INFO /usr/local/bin/bench use demo
+2024-03-21 10:40:06,134 INFO /usr/local/bin/bench --site demo install-app erpnext
+2024-03-21 10:41:59,665 INFO /usr/local/bin/bench set-config developer_mode on
+2024-03-21 10:42:43,394 INFO /usr/local/bin/bench start
+2024-03-21 10:47:08,473 INFO /usr/local/bin/bench use demo
+2024-03-21 10:47:25,317 INFO /usr/local/bin/bench start
+2024-03-21 10:47:25,882 INFO /usr/local/bin/bench serve --port 8000
+2024-03-21 10:47:25,887 INFO /usr/local/bin/bench worker
+2024-03-21 10:47:25,888 INFO /usr/local/bin/bench watch
+2024-03-21 10:47:25,889 INFO /usr/local/bin/bench schedule
+2024-03-21 10:50:57,159 INFO /usr/local/bin/bench new-app vsapp
+2024-03-21 10:50:57,167 LOG creating new app vsapp
+2024-03-21 10:51:45,189 LOG Installing vsapp
+2024-03-21 10:51:45,191 DEBUG cd /home/erp_user/frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/erp_user/frappe-bench/apps/vsapp 
+2024-03-21 10:51:48,573 DEBUG bench build --app vsapp
+2024-03-21 10:51:48,672 INFO /usr/local/bin/bench build --app vsapp
+2024-03-21 10:51:50,520 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-21 10:52:49,429 INFO /usr/local/bin/bench set-config developer_mode on
+2024-03-21 10:52:56,453 INFO /usr/local/bin/bench start
+2024-03-21 10:52:56,833 INFO /usr/local/bin/bench worker
+2024-03-21 10:52:56,852 INFO /usr/local/bin/bench serve --port 8000
+2024-03-21 10:52:56,871 INFO /usr/local/bin/bench watch
+2024-03-21 10:52:56,877 INFO /usr/local/bin/bench schedule
+2024-03-21 10:55:28,120 INFO /usr/local/bin/bench use demo
+2024-03-21 10:55:43,586 INFO /usr/local/bin/bench new-app vsapp
+2024-03-21 10:55:43,590 LOG creating new app vsapp
+2024-03-21 10:56:12,135 LOG Installing vsapp
+2024-03-21 10:56:12,136 DEBUG cd /home/erp_user/frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/erp_user/frappe-bench/apps/vsapp 
+2024-03-21 10:56:16,037 DEBUG bench build --app vsapp
+2024-03-21 10:56:16,143 INFO /usr/local/bin/bench build --app vsapp
+2024-03-21 10:56:17,861 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-21 10:56:23,885 INFO /usr/local/bin/bench --version
+2024-03-21 10:59:03,805 INFO /usr/local/bin/bench --site demo list-apps
+2024-03-21 10:59:23,160 INFO /usr/local/bin/bench use demo
+2024-03-21 10:59:38,063 INFO /usr/local/bin/bench new-app vsapp
+2024-03-21 10:59:38,069 LOG creating new app vsapp
+2024-03-21 11:00:38,705 LOG Installing vsapp
+2024-03-21 11:00:38,706 DEBUG cd /home/erp_user/frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/erp_user/frappe-bench/apps/vsapp 
+2024-03-21 11:00:41,531 DEBUG bench build --app vsapp
+2024-03-21 11:00:41,630 INFO /usr/local/bin/bench build --app vsapp
+2024-03-21 11:00:43,232 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-21 11:01:11,094 INFO /usr/local/bin/bench --site demo install-app vsapp
+2024-03-21 11:01:39,825 INFO /usr/local/bin/bench set-config developer_mode on
+2024-03-21 11:01:46,465 INFO /usr/local/bin/bench start
+2024-03-21 11:01:46,833 INFO /usr/local/bin/bench watch
+2024-03-21 11:01:46,834 INFO /usr/local/bin/bench serve --port 8000
+2024-03-21 11:01:46,843 INFO /usr/local/bin/bench worker
+2024-03-21 11:01:46,851 INFO /usr/local/bin/bench schedule
+2024-03-21 12:00:43,906 INFO /usr/local/bin/bench set-config developer_mode on
+2024-03-21 12:00:51,921 INFO /usr/local/bin/bench restart
+2024-03-21 12:00:51,949 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-21 12:00:59,940 INFO /usr/local/bin/bench start
+2024-03-21 12:01:00,645 INFO /usr/local/bin/bench serve --port 8000
+2024-03-21 12:01:00,660 INFO /usr/local/bin/bench worker
+2024-03-21 12:01:00,665 INFO /usr/local/bin/bench schedule
+2024-03-21 12:01:00,668 INFO /usr/local/bin/bench watch
+2024-03-22 11:18:36,403 INFO /usr/local/bin/bench --site demo list-apps
+2024-03-22 11:18:59,193 INFO /usr/local/bin/bench --site demo install-app client_script
+2024-03-22 11:19:43,876 INFO /usr/local/bin/bench --site demo install-app client_script
+2024-03-22 11:19:53,354 INFO /usr/local/bin/bench start
+2024-03-22 11:19:54,121 INFO /usr/local/bin/bench watch
+2024-03-22 11:19:54,139 INFO /usr/local/bin/bench schedule
+2024-03-22 11:19:54,145 INFO /usr/local/bin/bench serve --port 8000
+2024-03-22 11:19:54,145 INFO /usr/local/bin/bench worker
+2024-03-22 12:37:06,790 INFO /usr/local/bin/bench set-config -g developer_mode true
+2024-03-22 12:37:11,176 INFO /usr/local/bin/bench start
+2024-03-22 12:37:11,614 INFO /usr/local/bin/bench worker
+2024-03-22 12:37:11,642 INFO /usr/local/bin/bench watch
+2024-03-22 12:37:11,643 INFO /usr/local/bin/bench schedule
+2024-03-22 12:37:11,653 INFO /usr/local/bin/bench serve --port 8000
+2024-03-22 14:01:51,865 INFO /usr/local/bin/bench new-app client_script
+2024-03-22 14:01:51,878 LOG creating new app client_script
+2024-03-22 14:02:27,177 LOG Installing client_script
+2024-03-22 14:02:27,180 DEBUG cd /home/erp_user/frappe-bench && /home/erp_user/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/erp_user/frappe-bench/apps/client_script 
+2024-03-22 14:02:32,175 DEBUG bench build --app client_script
+2024-03-22 14:02:32,307 INFO /usr/local/bin/bench build --app client_script
+2024-03-22 14:02:35,368 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-03-22 14:02:48,527 INFO /usr/local/bin/bench --site demo install-app client_script
+2024-03-22 14:03:08,262 INFO /usr/local/bin/bench start
+2024-03-22 14:03:08,882 INFO /usr/local/bin/bench worker
+2024-03-22 14:03:08,889 INFO /usr/local/bin/bench watch
+2024-03-22 14:03:08,889 INFO /usr/local/bin/bench serve --port 8000
+2024-03-22 14:03:08,893 INFO /usr/local/bin/bench schedule
+2024-03-25 14:58:15,342 INFO /usr/local/bin/bench start
+2024-03-25 14:58:15,754 INFO /usr/local/bin/bench watch
+2024-03-25 14:58:15,763 INFO /usr/local/bin/bench schedule
+2024-03-25 14:58:15,774 INFO /usr/local/bin/bench worker
+2024-03-25 14:58:15,788 INFO /usr/local/bin/bench serve --port 8000
